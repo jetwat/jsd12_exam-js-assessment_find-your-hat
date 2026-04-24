@@ -115,7 +115,7 @@ class Field {
 
             if (this.field[this.currentY][this.currentX] === this.field[this.finalY][this.finalX]) {
                 console.log("🎉 You found the hat! You win!");
-                this.field[this.currentY][this.currentX] = "♥";
+                this.field[this.currentY][this.currentX] = "♦";
                 this.print();
                 return playing = false;
             }
@@ -142,5 +142,5 @@ class Field {
 
 }
 
-const myField = new Field(Field.generateField(50, 200, 0.15));
+const myField = new Field(Field.generateField(40, 200, 0.1));
 myField.runGame();
